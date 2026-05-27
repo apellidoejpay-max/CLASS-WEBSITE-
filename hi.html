@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <style>
+        /* Modern, responsive styling */
+        body { font-family: sans-serif; text-align: center; background-color: #f4f4f9; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        
+        /* Button Styling */
+        .btn { display: block; width: 100%; padding: 15px; margin: 10px 0; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        .btn:hover { background-color: #0056b3; }
+        
+        /* Menu Logic */
+        #game-menu { display: none; margin-top: 20px; border-top: 2px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Resource Portal</h1>
+    
+    <!-- Main Toggle Button -->
+    <button class="btn" onclick="toggleMenu()">🎮 Open Game Menu</button>
+
+    <!-- Hidden Game Menu -->
+    <div id="game-menu">
+        <h3>Featured Games</h3>
+        <!-- Link to The Impossible Quiz -->
+        <a href="https://www.addictinggames.com/puzzle/the-impossible-quiz" target="_blank" class="btn">
+            Play The Impossible Quiz
+        </a>
+    </div>
+
+    <!-- Class Files Section -->
+    <div style="margin-top: 40px; text-align: left;">
+        <h3>📁 Class Materials</h3>
+        <ul>
+            <li>Coming soon: Lecture notes and assignments.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("game-menu");
+        menu.style.display = (menu.style.display === "block") ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
+
